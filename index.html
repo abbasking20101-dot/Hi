@@ -1,0 +1,296 @@
+
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+  <!-- ─── BACKEND ORIGIN — DIRECT SUBDOMAIN (no Vercel proxy) ───────────────────
+       The Vercel /api/proxy relay was REMOVED (edge-request exhaustion). The
+       browser now talks DIRECTLY to the Render backend at the api subdomain.
+       Vercel serves only static frontend bytes; every API / WS / dynamic call
+       goes cross-origin to __RDX_API_BASE__. Cookies are SameSite=None+Secure so
+       they ride along; CORS on the backend allows this origin with credentials.
+
+       To move the backend to another host, change both values below to the new
+       https origin (API base includes no trailing path; WS is the same origin).
+       This file is NOT immutable-cached (only /assets/* is), so edits take effect
+       on the next page load — no vite rebuild, no asset-hash change. Keep
+       vercel.json's CSP connect-src in sync (must list this exact host + wss://). -->
+  <script>
+    window.__RDX_API_BASE__ = 'https://api.rdxcommunity.qzz.io';
+    window.__RDX_WS_URL__ = 'https://api.rdxcommunity.qzz.io';
+  </script>
+
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://cdn.rdxcommunity.qzz.io/assets_rdx/logo.png" />
+  <link rel="apple-touch-icon" href="https://cdn.rdxcommunity.qzz.io/assets_rdx/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RDX Auth | RDX Authentication - Secure License & HWID Auth System</title>
+  <meta name="description" content="RDX Auth (RDX Authentication) - The #1 free authentication and key distribution engine. HWID locking, license key management, encrypted TCP sockets, Discord integration, and remote variables for C++, C#, Python, and Rust apps." />
+  <meta name="keywords" content="RDX Auth, RDX Authentication, rdx auth, rdx authentication, rdx authantication, rdx authentification, RDX AUTH, RDX AUTHENTICATION, best hwid authentication, c++ auth system, c# auth, android mod menu auth, software licensing system, keyauth alternative, emulator bypass auth, anti-crack protection, key distribution engine, nodejs auth backend, game modding auth, free authentication system, hwid lock, license key generator, RDX auth free" />
+  <meta name="author" content="RDX Authentication" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#8c25f4" />
+  <link rel="canonical" href="https://rdxcommunity.qzz.io/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rdxcommunity.qzz.io/" />
+  <meta property="og:title" content="RDX Auth | RDX Authentication - Secure License & HWID Auth System" />
+  <meta property="og:description" content="RDX Auth (RDX Authentication) - The #1 free authentication and key distribution engine. HWID locking, license key management, encrypted TCP sockets, Discord integration, and remote variables." />
+  <meta property="og:site_name" content="RDX Authentication" />
+  <meta property="og:image" content="https://rdxcommunity.qzz.io/assets_rdx/logo.png" />
+  <meta property="og:image:width" content="192" />
+  <meta property="og:image:height" content="192" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://rdxcommunity.qzz.io/" />
+  <meta name="twitter:title" content="RDX Auth | RDX Authentication - Secure License & HWID Auth System" />
+  <meta name="twitter:description" content="RDX Auth (RDX Authentication) - The #1 free authentication and key distribution engine. HWID locking, license keys, Discord integration." />
+  <meta name="twitter:image" content="https://rdxcommunity.qzz.io/assets_rdx/logo.png" />
+
+  <!-- JSON-LD Structured Data for Google -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "RDX Authentication",
+      "alternateName": ["RDX Auth", "RDX AUTH", "RDX Authantication"],
+      "url": "https://rdxcommunity.qzz.io/",
+      "description": "RDX Auth - The #1 free authentication and key distribution engine with HWID locking, license key management, and Discord integration.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://rdxcommunity.qzz.io/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RDX Authentication",
+      "alternateName": "RDX Auth",
+      "url": "https://rdxcommunity.qzz.io/",
+      "logo": "https://rdxcommunity.qzz.io/assets_rdx/logo.png",
+      "description": "RDX Authentication provides enterprise-grade HWID locking, encrypted authentication, license key distribution, and Discord server management for software developers.",
+      "sameAs": [
+        "https://discord.gg/JCw4UC9zcv",
+        "https://www.youtube.com/@rdxpanel999",
+        "https://www.instagram.com/rdxofficial.in/"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RDX Authentication",
+      "alternateName": "RDX Auth",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Windows, Linux, macOS",
+      "description": "RDX Auth - Secure authentication and key distribution engine featuring hardware ID (HWID) locking, live statistics, Discord integration, and remote variables for C++, C#, Python, and Rust.",
+      "url": "https://rdxcommunity.qzz.io/",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free tier with 5 apps, unlimited keys and users"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "25000",
+        "bestRating": "5"
+      }
+    }
+  ]
+  </script>
+
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smoothWheel: true,
+        wheelMultiplier: 1,
+        touchMultiplier: 2,
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    });
+  </script>
+  <script type="module" crossorigin src="/assets/index.b3-dm5UpO03.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime.b3-z4PIMsjO.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor.b3-BGwMLR8B.js">
+  <link rel="stylesheet" crossorigin href="/assets/index.b3-BvAV8pKm.css">
+</head>
+
+<body class="bg-[#0B0B12] text-white">
+  <div id="root">
+    <!-- Premium SEO & Loading Shell -->
+    <div id="seo-shell">
+      <style>
+        #seo-shell {
+          position: fixed;
+          inset: 0;
+          background: #0B0B12;
+          color: #ffffff;
+          font-family: 'Space Grotesk', sans-serif;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          z-index: 9999;
+          overflow-y: auto;
+          padding: 2rem;
+          box-sizing: border-box;
+        }
+        .shell-container {
+          max-width: 800px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1.5rem;
+        }
+        .shell-logo {
+          position: relative;
+          width: 80px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background: rgba(140, 37, 244, 0.1);
+          border: 2px solid #8c25f4;
+          box-shadow: 0 0 20px rgba(140, 37, 244, 0.4);
+          animation: pulse-ring 2s infinite ease-in-out;
+        }
+        @keyframes pulse-ring {
+          0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(140, 37, 244, 0.4); }
+          50% { transform: scale(1.05); box-shadow: 0 0 35px rgba(140, 37, 244, 0.7); }
+        }
+        .shell-title {
+          font-size: 2.5rem;
+          font-weight: 700;
+          margin: 0;
+          background: linear-gradient(135deg, #ffffff 0%, #a78bfa 50%, #8c25f4 100%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .shell-desc {
+          color: #9ca3af;
+          font-size: 1.1rem;
+          max-width: 600px;
+          line-height: 1.6;
+          margin: 0;
+        }
+        .shell-features {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          margin-top: 1rem;
+          text-align: left;
+          width: 100%;
+        }
+        @media (max-width: 600px) {
+          .shell-features { grid-template-columns: 1fr; }
+        }
+        .shell-feature-item {
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          padding: 1rem;
+          border-radius: 0.75rem;
+        }
+        .shell-feature-title {
+          font-weight: 600;
+          color: #00f3ff;
+          margin-bottom: 0.25rem;
+        }
+        .shell-feature-desc {
+          font-size: 0.85rem;
+          color: #9ca3af;
+        }
+        .shell-footer {
+          margin-top: 2rem;
+          font-size: 0.85rem;
+          color: #4b5563;
+        }
+        .shell-links {
+          display: flex;
+          gap: 1rem;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 1rem;
+        }
+        .shell-link {
+          color: #a78bfa;
+          text-decoration: none;
+          font-weight: 500;
+        }
+        .shell-link:hover {
+          text-decoration: underline;
+        }
+      </style>
+      <div class="shell-container">
+        <div class="shell-logo">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8c25f4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
+          </svg>
+        </div>
+        <h1 class="shell-title">RDX Authentication</h1>
+        <p class="shell-desc">
+          The definitive authentication standard for high-performance software. Enterprise-grade protection featuring advanced HWID fingerprinting technology, encrypted communication protocols, 99.9% uptime SLA, and complete Discord integration.
+        </p>
+        
+        <div class="shell-features">
+          <div class="shell-feature-item">
+            <div class="shell-feature-title">Secure Server-Auth</div>
+            <div class="shell-feature-desc">HMAC SHA-256 signatures, timestamp anti-replay validation, and 4-tier HWID locking.</div>
+          </div>
+          <div class="shell-feature-item">
+            <div class="shell-feature-title">Unbeatable Free Tier</div>
+            <div class="shell-feature-desc">5 Apps, Unlimited Keys, Unlimited Users, and full remote variable system for free.</div>
+          </div>
+          <div class="shell-feature-item">
+            <div class="shell-feature-title">AI Mainframe</div>
+            <div class="shell-feature-desc">Voice Commands for PC automation. Control dashboard using natural language.</div>
+          </div>
+          <div class="shell-feature-item">
+            <div class="shell-feature-title">Free Remote Variables</div>
+            <div class="shell-feature-desc">Stream memory offsets, feature flags, or strings from dashboard to your app.</div>
+          </div>
+        </div>
+
+        <div class="shell-links">
+          <a href="/login" class="shell-link">Login</a>
+          <a href="/recovery" class="shell-link">Recovery</a>
+          <a href="/pricing" class="shell-link">Pricing</a>
+          <a href="/support" class="shell-link">Support</a>
+          <a href="/docs" class="shell-link">Documentation</a>
+          <a href="/api-docs" class="shell-link">API Docs</a>
+        </div>
+        
+        <div class="shell-footer">
+          &copy; 2026 RDX Authentication. All rights reserved. Secure authentication and key distribution ecosystem.
+        </div>
+      </div>
+    </div>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"1ec90afdc81348db869d56eae73ab257","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+
+</html>
